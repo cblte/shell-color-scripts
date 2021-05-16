@@ -15,6 +15,10 @@ initializeANSI()
   yellowf="${esc}[33m"   bluef="${esc}[34m";   purplef="${esc}[35m"
   cyanf="${esc}[36m";    whitef="${esc}[37m"
   
+  blackfbright="${esc}[90m";   redfbright="${esc}[91m";    greenfbright="${esc}[92m"
+  yellowfbright="${esc}[93m"   bluefbright="${esc}[94m";   purplefbright="${esc}[95m"
+  cyanfbright="${esc}[96m";    whitefbright="${esc}[97m"
+  
   blackb="${esc}[40m";   redb="${esc}[41m";    greenb="${esc}[42m"
   yellowb="${esc}[43m"   blueb="${esc}[44m";   purpleb="${esc}[45m"
   cyanb="${esc}[46m";    whiteb="${esc}[47m"
@@ -36,13 +40,13 @@ initializeANSI
 
 cat << EOF
 
- ${boldon}${whitef}    ▄▄▄${reset}
- ${boldon}${whitef} ▄█████▄▄ ${reset}
- ${boldon}${whitef}███${cyanb}▀▀▀▀${blackb}▀${cyanb}▀${blackb}▀${cyanb}▀${reset}
- ${boldon}${whitef}███${cyanb}▄   ${boldoff}${blackf}▀ ▀${reset}${cyanf}▀${reset}
- ${boldon}${whitef} ▄${cyanb}  ${reset}${boldon}${whitef}█████▄ ${boldoff}${redf}█▄${reset}
- ${boldoff}${redf}▀▀${reset}${boldon}${redb}${whitef}▄${cyanb}▄   ${redb}▄▄▄${reset}${boldoff}${redf}▀██▀${reset}
- ${boldon}${whitef} ██▀▀▀██▀  ${boldoff}${redf}▀${reset}
- ${boldon}${whitef} ▀▀▀▀ ▀▀▀▀${reset}
+ ${boldon}${whitefbright}    ▄▄▄${reset}
+ ${boldon}${whitefbright} ▄█████▄▄ ${reset}
+ ${boldon}${whitefbright}███${cyanb}▀▀▀▀${blackb}▀${cyanb}▀${blackb}▀${cyanb}▀${reset}
+ ${boldon}${whitefbright}███${cyanb}▄   ${boldoff}${blackf}▀ ▀${reset}${cyanf}▀${reset}
+ ${boldon}${whitefbright} ▄${cyanb}  ${reset}${boldon}${whitefbright}█████▄ ${boldoff}${redf}█▄${reset}
+ ${boldoff}${redf}▀▀${reset}${boldon}${redb}${whitefbright}▄${cyanb}▄   ${redb}▄▄▄${reset}${boldoff}${redf}▀██▀${reset}
+ ${boldon}${whitefbright} ██▀▀▀██▀  ${boldoff}${redf}▀${reset}
+ ${boldon}${whitefbright} ▀▀▀▀ ▀▀▀▀${reset}
  
 EOF

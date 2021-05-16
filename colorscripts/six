@@ -13,6 +13,10 @@ initializeANSI()
   yellowf="${esc}[33m"   bluef="${esc}[34m";   purplef="${esc}[35m"
   cyanf="${esc}[36m";    whitef="${esc}[37m"
   
+  blackfbright="${esc}[30m";   redfbright="${esc}[31m";    greenfbright="${esc}[32m"
+  yellowfbright="${esc}[33m"   bluefbright="${esc}[34m";   purplefbright="${esc}[35m"
+  cyanfbright="${esc}[96m";    whitefbright="${esc}[97m"
+  
   blackb="${esc}[40m";   redb="${esc}[41m";    greenb="${esc}[42m"
   yellowb="${esc}[43m"   blueb="${esc}[44m";   purpleb="${esc}[45m"
   cyanb="${esc}[46m";    whiteb="${esc}[47m"
@@ -31,7 +35,7 @@ initializeANSI()
 initializeANSI
 
 cat << EOF
- ${redf}▒▒▒▒${reset} ${boldon}${redf}▒▒${reset}   ${greenf}▒▒▒▒${reset} ${boldon}${greenf}▒▒${reset}   ${yellowf}▒▒▒▒${reset} ${boldon}${yellowf}▒▒${reset}   ${bluef}▒▒▒▒${reset} ${boldon}${bluef}▒▒${reset}   ${purplef}▒▒▒▒${reset} ${boldon}${purplef}▒▒${reset}   ${cyanf}▒▒▒▒${reset} ${boldon}${cyanf}▒▒${reset} 
- ${redf}▒▒ ■${reset} ${boldon}${redf}▒▒${reset}   ${greenf}▒▒ ■${reset} ${boldon}${greenf}▒▒${reset}   ${yellowf}▒▒ ■${reset} ${boldon}${yellowf}▒▒${reset}   ${bluef}▒▒ ■${reset} ${boldon}${bluef}▒▒${reset}   ${purplef}▒▒ ■${reset} ${boldon}${purplef}▒▒${reset}   ${cyanf}▒▒ ■${reset} ${boldon}${cyanf}▒▒${reset}  
- ${redf}▒▒ ${reset}${boldon}${redf}▒▒▒▒${reset}   ${greenf}▒▒ ${reset}${boldon}${greenf}▒▒▒▒${reset}   ${yellowf}▒▒ ${reset}${boldon}${yellowf}▒▒▒▒${reset}   ${bluef}▒▒ ${reset}${boldon}${bluef}▒▒▒▒${reset}   ${purplef}▒▒ ${reset}${boldon}${purplef}▒▒▒▒${reset}   ${cyanf}▒▒ ${reset}${boldon}${cyanf}▒▒▒▒${reset}  
+ ${redf}▒▒▒▒${reset} ${boldon}${redfbright}▒▒${reset}   ${greenf}▒▒▒▒${reset} ${boldon}${greenfbright}▒▒${reset}   ${yellowf}▒▒▒▒${reset} ${boldon}${yellowfbright}▒▒${reset}   ${bluef}▒▒▒▒${reset} ${boldon}${bluefbright}▒▒${reset}   ${purplef}▒▒▒▒${reset} ${boldon}${purplefbright}▒▒${reset}   ${cyanf}▒▒▒▒${reset} ${boldon}${cyanfbright}▒▒${reset} 
+ ${redf}▒▒ ■${reset} ${boldon}${redfbright}▒▒${reset}   ${greenf}▒▒ ■${reset} ${boldon}${greenfbright}▒▒${reset}   ${yellowf}▒▒ ■${reset} ${boldon}${yellowfbright}▒▒${reset}   ${bluef}▒▒ ■${reset} ${boldon}${bluefbright}▒▒${reset}   ${purplef}▒▒ ■${reset} ${boldon}${purplefbright}▒▒${reset}   ${cyanf}▒▒ ■${reset} ${boldon}${cyanfbright}▒▒${reset}  
+ ${redf}▒▒ ${reset}${boldon}${redfbright}▒▒▒▒${reset}   ${greenf}▒▒ ${reset}${boldon}${greenfbright}▒▒▒▒${reset}   ${yellowf}▒▒ ${reset}${boldon}${yellowfbright}▒▒▒▒${reset}   ${bluef}▒▒ ${reset}${boldon}${bluefbright}▒▒▒▒${reset}   ${purplef}▒▒ ${reset}${boldon}${purplefbright}▒▒▒▒${reset}   ${cyanf}▒▒ ${reset}${boldon}${cyanfbright}▒▒▒▒${reset}  
 EOF
