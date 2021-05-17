@@ -14,6 +14,10 @@ initializeANSI()
   blackf="${esc}[30m";   redf="${esc}[31m";    greenf="${esc}[32m"
   yellowf="${esc}[33m"   bluef="${esc}[34m";   purplef="${esc}[35m"
   cyanf="${esc}[36m";    whitef="${esc}[37m"
+  
+  blackfbrightbright="${esc}[90m";   redfbright="${esc}[91m";    greenfbright="${esc}[92m"
+  yellowfbrightbright="${esc}[93m"   bluefbright="${esc}[94m";   purplefbright="${esc}[95m"
+  cyanfbrightbright="${esc}[96m";    whitefbright="${esc}[97m"
  
   blackb="${esc}[40m";   redb="${esc}[41m";    greenb="${esc}[42m"
   yellowb="${esc}[43m"   blueb="${esc}[44m";   purpleb="${esc}[45m"
@@ -36,7 +40,7 @@ cat << EOF
  
  ${reset}${redf}  ██  ██   ${reset}${greenf}   ██  ██   ${reset}${yellowf}   ██  ██   ${reset}${bluef}   ██  ██   ${reset}${purplef}   ██  ██   ${reset}${cyanf}   ██  ██   ${reset}
  ${reset}${redf}██████████ ${reset}${greenf} ██████████ ${reset}${yellowf} ██████████ ${reset}${bluef} ██████████ ${reset}${purplef} ██████████ ${reset} ${cyanf}██████████ ${reset}
- ${reset}${redf}  ██${boldon}██${boldoff}██   ${reset}${greenf}   ██${boldon}██${boldoff}██   ${reset}${yellowf}   ██${boldon}██${boldoff}██   ${reset}${bluef}   ██${boldon}██${boldoff}██ ${reset}${purplef}     ██${boldon}██${boldoff}██   ${reset}${cyanf}   ██${boldon}██${boldoff}██   ${reset}
+ ${reset}${redf}  ██${boldon}${redfbright}██${boldoff}${redf}██   ${reset}${greenf}   ██${boldon}${greenfbright}██${boldoff}${greenf}██   ${reset}${yellowf}   ██${boldon}${yellowfbright}██${boldoff}${yellowf}██   ${reset}${bluef}   ██${boldon}${bluefbright}██${boldoff}${bluef}██ ${reset}${purplef}     ██${boldon}${purplefbright}██${boldoff}${purplef}██   ${reset}${cyanf}   ██${boldon}${cyanfbright}██${boldoff}${cyanf}██   ${reset}
  ${reset}${redf}██████████ ${reset}${greenf} ██████████ ${reset}${yellowf} ██████████ ${bluef} ██████████ ${purplef} ██████████ ${reset}${cyanf} ██████████${reset}
  ${reset}${redf}  ██  ██   ${reset}${greenf}   ██  ██   ${reset}${yellowf}   ██  ██   ${reset}${bluef}   ██  ██   ${reset}${purplef}   ██  ██   ${reset}${cyanf}   ██  ██   ${reset}
  ${reset}

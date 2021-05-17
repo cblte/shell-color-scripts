@@ -15,6 +15,10 @@ initializeANSI()
   yellowf="${esc}[33m"   bluef="${esc}[34m";   purplef="${esc}[35m"
   cyanf="${esc}[36m";    whitef="${esc}[37m"   whitef="${esc}[37m"
   
+  blackfbright="${esc}[90m";   redfbright="${esc}[91m";    greenfbright="${esc}[92m"
+  yellowfbright="${esc}[93m"   bluefbright="${esc}[94m";   purplefbright="${esc}[95m"
+  cyanfbright="${esc}[96m";    whitefbright="${esc}[97m"   whitefbright="${esc}[97m"
+  
   blackb="${esc}[40m";   redb="${esc}[41m";    greenb="${esc}[42m"
   yellowb="${esc}[43m"   blueb="${esc}[44m";   purpleb="${esc}[45m"
   cyanb="${esc}[46m";    whiteb="${esc}[47m"
@@ -34,8 +38,8 @@ initializeANSI
 
 cat << EOF  
   
-${boldon}${redf}   ██     ██ ${reset} ${boldon}${greenf}   ██     ██ ${reset} ${boldon}${yellowf}   ██     ██ ${reset} ${boldon}${bluef}   ██     ██ ${reset} ${boldon}${purplef}   ██     ██ ${reset} ${boldon}${cyanf}   ██     ██ ${reset} 
-${boldon}${redf}  █${whitef} ■${reset}${boldon}${redf}█   █${whitef}■${reset}${boldon}${redf} █${reset} ${boldon}${greenf}  █${whitef} ■${reset}${boldon}${greenf}█   █${whitef}■${reset}${boldon}${greenf} █${reset} ${boldon}${yellowf}  █${whitef} ■${reset}${boldon}${yellowf}█   █${whitef}■${reset}${boldon}${yellowf} █${reset} ${boldon}${bluef}  █${whitef} ■${reset}${boldon}${bluef}█   █${whitef}■${reset}${boldon}${bluef} █${reset} ${boldon}${purplef}  █${whitef} ■${reset}${boldon}${purplef}█   █${whitef}■${reset}${boldon}${purplef} █${reset} ${boldon}${cyanf}  █${whitef} ■${reset}${boldon}${cyanf}█   █${whitef}■${reset}${boldon}${cyanf} █${reset} 
+${boldon}${redfbright}   ██     ██ ${reset} ${boldon}${greenfbright}   ██     ██ ${reset} ${boldon}${yellowfbright}   ██     ██ ${reset} ${boldon}${bluefbright}   ██     ██ ${reset} ${boldon}${purplefbright}   ██     ██ ${reset} ${boldon}${cyanfbright}   ██     ██ ${reset} 
+${boldon}${redfbright}  █${whitef} ■${reset}${boldon}${redfbright}█   █${whitef}■${reset}${boldon}${redfbright} █${reset} ${boldon}${greenfbright}  █${whitef} ■${reset}${boldon}${greenfbright}█   █${whitef}■${reset}${boldon}${greenfbright} █${reset} ${boldon}${yellowfbright}  █${whitef} ■${reset}${boldon}${yellowfbright}█   █${whitef}■${reset}${boldon}${yellowfbright} █${reset} ${boldon}${bluefbright}  █${whitef} ■${reset}${boldon}${bluefbright}█   █${whitef}■${reset}${boldon}${bluefbright} █${reset} ${boldon}${purplefbright}  █${whitef} ■${reset}${boldon}${purplefbright}█   █${whitef}■${reset}${boldon}${purplefbright} █${reset} ${boldon}${cyanfbright}  █${whitef} ■${reset}${boldon}${cyanfbright}█   █${whitef}■${reset}${boldon}${cyanfbright} █${reset} 
 ${redf}   █ █   █ █ ${reset} ${greenf}   █ █   █ █ ${reset} ${yellowf}   █ █   █ █ ${reset} ${bluef}   █ █   █ █ ${reset} ${purplef}   █ █   █ █ ${reset} ${cyanf}   █ █   █ █ ${reset}
 ${redf}     █ █ █   ${reset} ${greenf}     █ █ █   ${reset} ${yellowf}     █ █ █   ${reset} ${bluef}     █ █ █   ${reset} ${purplef}     █ █ █   ${reset} ${cyanf}     █ █ █   ${reset}
 ${redf}      =■=    ${reset} ${greenf}      =■=    ${reset} ${yellowf}      =■=    ${reset} ${bluef}      =■=    ${reset} ${purplef}      =■=    ${reset} ${cyanf}      =■=    ${reset}                                              
